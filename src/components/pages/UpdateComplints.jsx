@@ -77,7 +77,7 @@ const handleSingleData = () => {
                     {/* <div className='p-10'>
                         <img src={p} className='w-[500px]'/>
                     </div> */}
-                    <div id='bg' className='shadow-lg shadow-gray-600 sm:mt-10 sm:w-[300px] w-[300px] ml-10 sm:h-[390px] h-[200px] px-2 sm:p-2 sm:px-4 sm:ml-[40%] mt-4 bg-seconderyColor purple-400'>
+                    <div id='' className='shadow-lg shadow-gray-600 sm:mt-10 sm:w-[300px] w-[300px] ml-10 sm:h-[390px] h-[200px] px-2 sm:p-2 sm:px-4 sm:ml-[40%] mt-4 bg-seconderyColor purple-400'>
                         <form>
                             <h1 className='text-center text-2xl font-bold text-white'>Complain Update</h1>
                             <div>
