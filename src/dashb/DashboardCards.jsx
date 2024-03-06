@@ -14,7 +14,7 @@ function DashboardCards() {
 
  }
 const getUsers=()=>{
-    axios.get('https://backend-complaints.onrender.com/users').then((res)=>{
+    axios.get('https://backend-complaints.onrender.com/total/users').then((res)=>{
         settotalUsers(res.data)
         console.log(res.data)
     }).catch((error)=>{
