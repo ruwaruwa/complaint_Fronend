@@ -10,7 +10,7 @@ export default function Login() {
 const navigate =useNavigate()
   const handleLogin= (e)=>{
     e.preventDefault();
-    axios.post('http://localhost:3000/admin/login',{
+    axios.post('https://backend-complaints.onrender.com/admin/login',{
       "username":username,
       "password":password
     }).then((response)=>{

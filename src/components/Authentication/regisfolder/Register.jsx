@@ -10,7 +10,7 @@ export default function Register() {
 const navigate =useNavigate()
   const handleLogin= (e)=>{
     e.preventDefault();
-    axios.post('http://localhost:3000/admin/register',{
+    axios.post('https://backend-complaints.onrender.com/admin/register',{
       "username":username,
       "password":password
     }).then((response)=>{

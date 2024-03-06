@@ -29,7 +29,7 @@ export default function Complaints() {
 
 //red data
 const handleGet= ()=>{
-axios.get(`http://localhost:3000/complaint/get?page=${page}`).then((response)=>{
+axios.get(`https://backend-complaints.onrender.com/complaint/get?page=${page}`).then((response)=>{
     console.log(response.data)
     setComplaints(response.data)
 
@@ -48,7 +48,7 @@ const handlePreviw=()=>{
 
 
 const handleDelete =(id)=>{
-    axios.delete(`http://localhost:3000/complaint/deletes/${id}`).then((response)=>{
+    axios.delete(`https://backend-complaints.onrender.com/complaint/deletes/${id}`).then((response)=>{
         console.log(response.data)
        // alert('succes fuly deleted')
        toast.success('success full Deleted !')
@@ -65,7 +65,7 @@ const handleserach=(id)=>{
 
     const key = id.target.value ;
     if(key){
-      axios.get(`http://localhost:3000/complaint/search/${key}`).then((response)=>{
+      axios.get(`https://backend-complaints.onrender.com/complaint/search/${key}`).then((response)=>{
         setComplaints(response.data)
   console.log(response.data.name)
    

@@ -10,7 +10,7 @@ const [password,setpassword]=useState('')
 const [getData,setGetdata]=useState([])
   const params=useParams()
 const handleSingleData = () => {
-    axios.get(`http://localhost:3000/admin/${params.id}`).then((response)=> {
+    axios.get(`https://backend-complaints.onrender.com/admin/${params.id}`).then((response)=> {
     // setName(response.data.username)
       setusername(response.data[0].username);
       setpassword(response.data[0].password);
@@ -28,7 +28,7 @@ const handleSingleData = () => {
   const navigate=useNavigate()
   const hadnleUpdate=(e)=>{
     e.preventDefault();
-    axios.put(`http://localhost:3000/admin/update/${params.id}`,{
+    axios.put(`https://backend-complaints.onrender.com/admin/update/${params.id}`,{
       "username":username,
       "password":password
     }).then((response)=>{

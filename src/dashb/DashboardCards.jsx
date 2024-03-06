@@ -5,7 +5,7 @@ function DashboardCards() {
  const [totalcomtaint,settotalcom]=useState([])
  const [userTotal,settotalUsers]=useState([])
  const handleGetcom=()=>{
-    axios.get('http://localhost:3000/total').then((res)=>{
+    axios.get('https://backend-complaints.onrender.com/total').then((res)=>{
         console.log(res.data)
         settotalcom(res.data)
     }).catch((error)=>{
@@ -14,7 +14,7 @@ function DashboardCards() {
 
  }
 const getUsers=()=>{
-    axios.get('http://localhost:3000/total/users').then((res)=>{
+    axios.get('https://backend-complaints.onrender.com/users').then((res)=>{
         settotalUsers(res.data)
         console.log(res.data)
     }).catch((error)=>{

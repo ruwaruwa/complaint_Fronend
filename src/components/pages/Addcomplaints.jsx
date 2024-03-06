@@ -14,7 +14,7 @@ export default function Addcomplaints() {
 //////////////////
     const handlESave=(e)=>{
         e.preventDefault() 
-        axios.post('http://localhost:3000/complaint/register',{
+        axios.post('https://backend-complaints.onrender.com/complaint/register',{
 "name":name,
 "email":email,
 "password":password,

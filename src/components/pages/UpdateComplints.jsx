@@ -13,7 +13,7 @@ export default function UpdateComplints() {
     //get one
 const params=useParams()
 const handleSingleData = () => {
-    axios.get(`http://localhost:3000/complaint/getOne/${params.id}`).then((response)=> {
+    axios.get(`https://backend-complaints.onrender.com/complaint/getOne/${params.id}`).then((response)=> {
     setName(response.data.name)
     console.log(response.data[0].name)
       setName(response.data[0].name);
@@ -47,7 +47,7 @@ const handleSingleData = () => {
     const navigate = useNavigate()
     const hadleUpdate =(e)=>{
         e.preventDefault();
-        axios.put(`http://localhost:3000/complaint/update/${params.id}`,{
+        axios.put(`https://backend-complaints.onrender.com/complaint/update/${params.id}`,{
    "name":name,
     "email":email,
      "password":password,

@@ -8,7 +8,7 @@ export default function UserTwo() {
   const [getusers,setgtUsers]=useState([])
 
   const handleGEttusers=()=>{
-      axios.get('http://localhost:3000/admin/register/get').then((response)=>{
+      axios.get('https://backend-complaints.onrender.com/admin/register/get').then((response)=>{
 setgtUsers(response.data)
 console.log(response.data)
       })
@@ -21,7 +21,7 @@ handleGEttusers()
   const handleserach=(id)=>{
       const key =id.target.value;
       if(key){
-        axios.get(`http://localhost:3000/user/search/${key}`).then((response)=>{
+        axios.get(`https://backend-complaints.onrender.com/user/search/${key}`).then((response)=>{
           setgtUsers(response.data)
     console.log(response.data.username)
      
