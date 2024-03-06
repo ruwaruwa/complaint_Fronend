@@ -31,10 +31,10 @@ toast.success('waxan kugu soo jawabi donaa sida ugu dhaqsiga badan')
         <div className='mr-10 sm:ml-20 [50%] px-4 sm:mt-3 mt- 20 sm:mr- 10 rounded-sm sm:w-[350px] w-[350px] sm:h-[] shadow-black primeryColor -500 bg-seconderyColor bg- white p-4 shadow-lg'>
 <div className='p-4 px-4 mb-'>
 <form ref={form} onSubmit={sendEmail}>
-  <p className='text-white txt-2xl'>Let me Comment here</p>
-      <label className='text-white text-xl'>Name</label><br></br>
+  <p className='text-white text-2xl font-bold'>Let me Comment here</p>
+      <label className='text-white text-xl'>Your Name</label><br></br>
       <input type="text" name="user_name"  className='w-full p-3'/><br></br>
-      <label  className='text-white text-xl'>Email</label><br></br>
+      <label  className='text-white text-xl'>your Email</label><br></br>
       <input type="email" name="user_email"  className='w-full p-3'/><br></br>
       <label  className='text-white text-xl'>Message</label><br></br>
       <textarea name="message"  className='w-full p-4'/><br></br>
