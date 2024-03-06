@@ -50,7 +50,7 @@ export default function Addcomplaints() {
                 </div> */}
 
               </div>
-                <div className='shadow-lg shadow-gray-600 sm:mt-0  sm:w-[400px] w-[300px] ml-10 sm:h-[380px] h-[390px] px-2 sm:p-2 sm:px-4 sm:ml- [40%] mt-4 bg-seconderyColor purple-400'>
+                <div className='shadow-lg shadow-gray-600 sm:mt-0  sm:w-[400px] w-[300px] ml-10 sm:h-[380px] h-[390px] px-2 sm:p-2 sm:px-4 sm:ml- [40%] mt-4 bg-seconderyColor purple-400 absolute top-10'>
                     <form>
                         <h1 className='text-center text-2xl font-bold text-white'>Complaint Form</h1>
                         <div>
