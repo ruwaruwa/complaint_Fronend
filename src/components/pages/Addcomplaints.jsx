@@ -5,6 +5,7 @@ import axios from 'axios'
 import Headers from './Header2'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import Footer from '../../dashb/webpages/Footer'
 import './Com.css'
 export default function Addcomplaints() {
     const [name,setName]=useState('')
@@ -41,7 +42,7 @@ export default function Addcomplaints() {
         <Headers/>
         <div className='text-primeryColor '>
         {/* h-[100vh] bg-cover bg-gradient-to-b from-pink- 600 */}
-            <div id='b g' className='items-center bg-cover flex justify-center  h- [100vh] bg- cover bg-gradient-to-b from-pink- 600 -300 text-black'>
+            <div id='b g' className='p- items-center bg-cover flex justify-center  h- [100vh] bg- cover bg-gradient-to-b from-pink- 600 -300 text-black'>
                 <div className='grid sm:grid-cols-2 sm:p-2  pb-3'>
 
               <div>
@@ -50,7 +51,7 @@ export default function Addcomplaints() {
                 </div>
 
               </div>
-                <div className='shadow-lg shadow-gray-600 sm:mt-16  sm:w-[400px] w-[300px] p-4 ml-10 sm:h-[380px] h-[390px] px-2 sm:p-2 sm:px-4 sm:ml- [40%] mt-4 bg-seconderyColor purple-400 '>
+                <div className='shadow-lg shadow-gray-600 sm:mt-16  sm:w-[400px] pb-10  w-[300px] p- ml-10 sm:h-[380px] h-[380px] px-2 sm:p-2 sm:px-4 sm:ml- [40%]  bg-seconderyColor purple-400 '>
                     <form>
                         <h1 className='text-center text-2xl font-bold text-white'>Complaint Form</h1>
                         <div>
@@ -77,6 +78,7 @@ export default function Addcomplaints() {
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
   )
 }
