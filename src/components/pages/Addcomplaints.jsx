@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 // import Header from './Header'
-import p from '../../assets/images/qu2.png'
+import p from '../../assets/images/qu.png'
 import axios from 'axios'
 import Headers from './Header2'
 import { useNavigate } from 'react-router-dom'
@@ -41,16 +41,16 @@ export default function Addcomplaints() {
         <Headers/>
         <div className='text-primeryColor '>
         {/* h-[100vh] bg-cover bg-gradient-to-b from-pink- 600 */}
-            <div id='bg' className='items-center bg-cover flex justify-center  h-[100vh] bg- cover bg-gradient-to-b from-pink- 600 -300 text-black'>
-                <div className='grid sm:grid- cols-2'>
+            <div id='b g' className='items-center bg-cover flex justify-center  h- [100vh] bg- cover bg-gradient-to-b from-pink- 600 -300 text-black'>
+                <div className='grid sm:grid-cols-2'>
 
               <div>
-              {/* <div className='p-10'>
-                    <img src={p} className='sm:w-[550px] sm:h-[400px] mr- [20%]'/>
-                </div> */}
+              <div className='p-10'>
+                    <img src={p} className='sm:w-[590px] sm:h-[480px] mr- [20%]'/>
+                </div>
 
               </div>
-                <div className='shadow-lg shadow-gray-600 sm:mt-0  sm:w-[400px] w-[300px] ml-10 sm:h-[380px] h-[390px] px-2 sm:p-2 sm:px-4 sm:ml- [40%] mt-4 bg-seconderyColor purple-400 absolute top-10'>
+                <div className='shadow-lg shadow-gray-600 sm:mt-16  sm:w-[400px] w-[300px] ml-10 sm:h-[380px] h-[390px] px-2 sm:p-2 sm:px-4 sm:ml- [40%] mt-4 bg-seconderyColor purple-400 '>
                     <form>
                         <h1 className='text-center text-2xl font-bold text-white'>Complaint Form</h1>
                         <div>
